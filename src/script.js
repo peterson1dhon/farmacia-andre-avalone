@@ -1,21 +1,27 @@
 $(document).ready(function(){
 
-  $('#menu').click(function(){
+  $('#search, fa-search').mouseenter(function(){
+    $('.logo').hide();
+  });
+
+  $('#search, fa-search').mouseleave(function(){
+    $('.logo').show();
+  });
+
+  $('.fa-bars').click(function(){
+    $('.navbar').toggle();
     $(this).toggleClass('fa-times');
-    $('.navbar').toggleClass('nav-toggle');
   });
 
-  $(window).on('scroll load', function(){
-
-    $('#menu').removeClass('fa-times');
-    $('.navbar').removeClass('nav-toggle');
-
-    if( $(window).scrollTop() > 68){
-      $('header .header-2').addClass('header-active');
-    }else{
-      $('header .header-2').removeClass('');
-    }
-
+  $('.navbar, .navbar a').click(function(){
+    $('.navbar').hide();
+    $('.fa-bars').removeClass('fa-times');
   });
-
 });
+
+
+
+
+
+
+ 
