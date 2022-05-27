@@ -17,6 +17,14 @@ $(document).ready(function(){
     $('.navbar').hide();
     $('.fa-bars').removeClass('fa-times');
   });
+
+  $('.home-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        items:1,
+        autoplay:true
+    });
 });
 
 
