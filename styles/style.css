@@ -149,7 +149,8 @@ body {
 }
 
 #home {
-  background: #999999;
+  background: #0224fa;
+  background: radial-gradient(circle, rgba(2, 36, 250, 0.950018) 0%, rgba(12, 185, 240, 0.983631) 50%, #0b33c2 100%);
 }
 
 #home .slide {

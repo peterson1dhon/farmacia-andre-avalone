@@ -172,7 +172,9 @@ body {
 
 
 #home{
-  background: rgb(153, 153, 153);
+  // background: rgb(153, 153, 153);
+  background: rgb(2,36,250);
+background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(12,185,240,0.9836309523809523) 50%, rgba(11,51,194,1) 100%);
 
   .slide{
     min-height: 100vh;
