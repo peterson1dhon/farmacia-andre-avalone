@@ -479,7 +479,7 @@ body {
     width: 100vw;
   }
   #product .product-container .title {
-    margin: 0;
+    margin-left: 0;
     text-align: center;
   }
 }

@@ -34,7 +34,7 @@ $(document).ready(function(){
       center:true,
       responsive:{
         0:{
-          item:1,
+          items:1,
           nav:true
         },
         550:{
