@@ -434,6 +434,37 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
   .box-cantainer{
     height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .review-slider{
+      .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .image{
+          margin-top: 10rem;
+          margin-left: 3rem;
+
+          img{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50% 50% 50% 0%;
+            border: .5rem solid orangered;
+          }
+        }
+
+        .comment{
+          height: 20rem;
+          width: 45rem;
+          background: #fff;
+          border-radius: 2% 2% 0% 40%;
+          padding-top: 2rem;
+        }
+      }
+    }
   }
 }
 
