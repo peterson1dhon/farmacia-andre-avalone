@@ -405,6 +405,40 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
   }
 }
 
+// review part / parte de revisão
+
+#review{
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  background: url(../assets/images/review.jpg), linear-gradient(blue, blue) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: screen;
+  position: relative;
+
+  .heading{
+    @include heading();
+    padding-top: 7rem;
+    color: red;
+
+    &::after{
+      background: #fff;
+    }
+  }
+
+  .box-cantainer{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
 
 
  
