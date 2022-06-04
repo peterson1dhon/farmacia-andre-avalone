@@ -20,7 +20,7 @@ $(document).ready(function(){
 
   $(window).on('scroll load', function(){
 
-    if($(window).scrollTop() > 20){
+    if($(window).scrollTop() > 10){
       $('#header').css({
         'background':'#00008b',
         'box-shadow':'0 .1rem .3rem #000'
