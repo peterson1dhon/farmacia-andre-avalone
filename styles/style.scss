@@ -58,7 +58,7 @@ body {
 	justify-content: space-between;
 	padding: .5rem 1.5rem;
 	color: #fff;
-  background: #00008b;
+  // background: #00008b;
 
   .fa-bars{
     font-size: 3rem;
@@ -422,20 +422,32 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
   background-blend-mode: screen;
   position: relative;
 
-  .shape{
-    position: absolute;
-    top: 0; left: 0;
-    height: 100%;
-    width: 100%;
-    background: url(../assets/images/farmacia-1.jpg) no-repeat;
-    background-size:cover;
-    background-position: 100% 110%;
 
+  .owl-nav{
+    .owl-next, .owl-prev{
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      color: #FF0000;
+      font-size: 6rem;
+      background: none;
+      border:  none;
+      outline: none;
+    }
+
+    .owl-next{
+      right: 4rem;
+    }
+
+    .owl-prev{
+      left: 4rem;
+    }
   }
+
 
   .heading{
     @include heading();
-    padding-top: 7rem;
+    padding-top: 2rem;
     color: red;
 
     &::after{
@@ -443,7 +455,7 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
     }
   }
 
-  .box-cantainer{
+  .box-container{
     height: 100%;
     width: 100%;
     display: flex;
@@ -547,6 +559,42 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
       .title{
         margin-left: 0;
         text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px){
+  #review{
+    .heading{
+      padding-top: 10rem;
+    }
+    .box-container{
+      .review-slider{
+        .box{
+          position: relative;
+          height: 45vh;
+
+          .image{
+            position: absolute;
+            top: 0;
+            margin: 0;
+
+            img{
+              border-radius: 5rem;
+            }
+          }
+
+          .comment{
+            border-radius: 1rem;
+            text-align: center;
+            width: 35rem;
+
+            h3{
+              text-align: center;
+            }
+          }
+        }
       }
     }
   }

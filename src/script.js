@@ -18,6 +18,21 @@ $(document).ready(function(){
     $('.fa-bars').removeClass('fa-times');
   });
 
+  $(window).on('scroll load', function(){
+
+    if($(window).scrollTop() > 20){
+      $('#header').css({
+        'background':'#00008b',
+        'box-shadow':'0 .1rem .3rem #000'
+      });
+    }else{
+      $('#header').css({
+        'background':'none',
+        'box-shadow':'none'
+      });
+    }
+  });
+
   $('.home-slider').owlCarousel({
         loop:true,
         margin:10,

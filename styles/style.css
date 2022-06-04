@@ -30,7 +30,6 @@ body {
           justify-content: space-between;
   padding: .5rem 1.5rem;
   color: #fff;
-  background: #00008b;
 }
 
 #header .fa-bars {
@@ -476,15 +475,24 @@ body {
   position: relative;
 }
 
-#review .shape {
+#review .owl-nav .owl-next, #review .owl-nav .owl-prev {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: url(../assets/images/farmacia-1.jpg) no-repeat;
-  background-size: cover;
-  background-position: 100% 110%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FF0000;
+  font-size: 6rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#review .owl-nav .owl-next {
+  right: 4rem;
+}
+
+#review .owl-nav .owl-prev {
+  left: 4rem;
 }
 
 #review .heading {
@@ -494,7 +502,7 @@ body {
   padding-top: 5rem;
   margin: 2rem 0;
   position: relative;
-  padding-top: 7rem;
+  padding-top: 2rem;
   color: red;
 }
 
@@ -514,7 +522,7 @@ body {
   background: #fff;
 }
 
-#review .box-cantainer {
+#review .box-container {
   height: 100%;
   width: 100%;
   display: -webkit-box;
@@ -528,7 +536,7 @@ body {
           justify-content: center;
 }
 
-#review .box-cantainer .review-slider .box {
+#review .box-container .review-slider .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,19 +548,19 @@ body {
           justify-content: center;
 }
 
-#review .box-cantainer .review-slider .box .image {
+#review .box-container .review-slider .box .image {
   margin-top: 10rem;
   margin-left: 3rem;
 }
 
-#review .box-cantainer .review-slider .box .image img {
+#review .box-container .review-slider .box .image img {
   height: 10rem;
   width: 10rem;
   border-radius: 50% 50% 50% 0%;
   border: .5rem solid orangered;
 }
 
-#review .box-cantainer .review-slider .box .comment {
+#review .box-container .review-slider .box .comment {
   height: 20rem;
   width: 45rem;
   background: #fff;
@@ -560,20 +568,20 @@ body {
   padding-top: 2rem;
 }
 
-#review .box-cantainer .review-slider .box .comment p {
+#review .box-container .review-slider .box .comment p {
   color: #333;
   font-size: 1.6rem;
   padding: 1rem;
   text-align: center;
 }
 
-#review .box-cantainer .review-slider .box .comment p i {
+#review .box-container .review-slider .box .comment p i {
   color: red;
   font-size: 1.6rem;
   padding: 2rem;
 }
 
-#review .box-cantainer .review-slider .box .comment h3 {
+#review .box-container .review-slider .box .comment h3 {
   text-align: end;
   color: #FF0000;
 }
@@ -608,6 +616,32 @@ body {
   }
   #product .product-container .title {
     margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #review .heading {
+    padding-top: 10rem;
+  }
+  #review .box-container .review-slider .box {
+    position: relative;
+    height: 45vh;
+  }
+  #review .box-container .review-slider .box .image {
+    position: absolute;
+    top: 0;
+    margin: 0;
+  }
+  #review .box-container .review-slider .box .image img {
+    border-radius: 5rem;
+  }
+  #review .box-container .review-slider .box .comment {
+    border-radius: 1rem;
+    text-align: center;
+    width: 35rem;
+  }
+  #review .box-container .review-slider .box .comment h3 {
     text-align: center;
   }
 }
