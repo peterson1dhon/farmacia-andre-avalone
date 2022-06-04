@@ -6,7 +6,7 @@
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
   text-transform: capitalize;
-  font-family: 'Exo 2',sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 html {
@@ -28,8 +28,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.5rem 2.5rem;
+  padding: .5rem 1.5rem;
   color: #fff;
+  background: #00008b;
 }
 
 #header .fa-bars {
@@ -466,13 +467,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  background: url(../assets/images/review.jpg), -webkit-gradient(linear, left top, left bottom, from(blue), to(blue)) no-repeat;
-  background: url(../assets/images/review.jpg), linear-gradient(blue, blue) no-repeat;
+  background: url(../assets/images/farmacia.jpg), -webkit-gradient(linear, left top, left bottom, from(blue)) no-repeat;
+  background: url(../assets/images/farmacia.jpg), linear-gradient(blue) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: screen;
   position: relative;
+}
+
+#review .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url(../assets/images/farmacia-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: 100% 110%;
 }
 
 #review .heading {
@@ -546,6 +558,24 @@ body {
   background: #fff;
   border-radius: 2% 2% 0% 40%;
   padding-top: 2rem;
+}
+
+#review .box-cantainer .review-slider .box .comment p {
+  color: #333;
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#review .box-cantainer .review-slider .box .comment p i {
+  color: red;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+#review .box-cantainer .review-slider .box .comment h3 {
+  text-align: end;
+  color: #FF0000;
 }
 
 .fa-times {
