@@ -612,11 +612,60 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
   }
 }
 
- 
+// newsletter
+
+#newsletter{
+  width: 100vw;
+ background: linear-gradient(rgba(0,0,255,.4), rgba(0,0,255,.4)), url(../assets/images/perfumaria-1.jpg)no-repeat;
+ background: cover;
+ background-size: center;
+ background-attachment: fixed;
+ padding: 6rem 0;
+ text-align: center;
+
+ h1{
+   font-size: 6rem;
+   color: #fff;
+ }
+ p{
+   font-size: 3rem;
+   color: #fff;
+ }
+
+ input[type="text"]{
+   outline: none;
+   border: none;
+   background: #333;
+   color: #fff;
+   height: 4rem;
+   width: 34rem;
+   border-radius: 3rem;
+   font-size: 1.5rem;
+   padding: 1.5rem;
+
+   &::placeholder{
+     color: #ccc;
+   }
+ }
+ input[type="submit"]{
+  display: inline;
+  @include button();
+  margin-top: 2rem;
+  background: red;
+
+  &:hover{
+    background: #00008b;
+  }
+
+ }
+
+}
+
+
 
 
 .fa-times{
-  transform: translatex(27rem);
+transform: translatex(27rem);
   padding-top: 1rem;
 }
 
@@ -707,6 +756,15 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
           }
         }
       }
+    }
+  }
+
+  #newsletter{
+    h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 2rem;
     }
   }
 }
