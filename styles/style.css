@@ -727,6 +727,12 @@ body {
   background: #FF0000;
 }
 
+#brand .brand-slider img {
+  height: 10rem;
+  width: 15rem;
+  margin: 4rem auto;
+}
+
 .fa-times {
   -webkit-transform: translatex(27rem);
           transform: translatex(27rem);
@@ -757,6 +763,19 @@ body {
   }
   #product .product-container .title {
     margin-left: 0;
+    text-align: center;
+  }
+  #offer .deal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #offer .deal .image img {
+    height: auto;
+    width: 100%;
+  }
+  #offer .deal .content {
     text-align: center;
   }
 }

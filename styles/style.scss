@@ -602,7 +602,15 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
   }
 }
 
-
+#brand{
+  .brand-slider{
+    img{
+      height: 10rem;
+      width: 15rem;
+      margin: 4rem auto;
+    }
+  }
+}
 
  
 
@@ -647,6 +655,21 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
     .product-container{
       .title{
         margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+  #offer{
+    .deal{
+      flex-flow: column;
+      .image{
+        img{
+          height: auto;
+          width: 100%;
+        }
+        
+      }
+      .content{
         text-align: center;
       }
     }
