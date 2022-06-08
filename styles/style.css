@@ -808,6 +808,116 @@ body {
   background: #00008b;
 }
 
+#footer {
+  padding: 2rem 0;
+  background: #333;
+  width: 100vw;
+}
+
+#footer .row {
+  width: 100%;
+  margin: 0;
+}
+
+#footer .brand-info {
+  margin: 1rem;
+  padding: 0;
+}
+
+#footer .brand-info a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#footer .brand-info a img {
+  width: 7rem;
+  border-radius: 5px;
+}
+
+#footer .brand-info a:hover {
+  text-decoration: none;
+}
+
+#footer .brand-info a i {
+  padding: 0 .5rem;
+  font-size: 2rem;
+}
+
+#footer .brand-info a h3 {
+  display: inline;
+  font-size: 2rem;
+}
+
+#footer .brand-info p {
+  color: #ccc;
+  padding: 2rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#footer .links {
+  padding: 0;
+  margin: 1rem;
+}
+
+#footer .links h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#footer .links .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#footer .links .nav-links a {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+#footer .links, #footer .follow-us {
+  padding: 0;
+  margin: 1rem;
+}
+
+#footer .links h3, #footer .follow-us h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+#footer .links .follow-us-links, #footer .follow-us .follow-us-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+#footer .links .follow-us-links a, #footer .follow-us .follow-us-links a {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+#footer .credit {
+  color: #fff;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  width: 100%;
+  border: 100%;
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+}
+
+#footer .credit span {
+  color: #FF0000;
+}
+
 .fa-times {
   -webkit-transform: translatex(27rem);
           transform: translatex(27rem);

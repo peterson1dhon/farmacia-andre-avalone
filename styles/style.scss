@@ -58,7 +58,6 @@ body {
 	justify-content: space-between;
 	padding: .5rem 1.5rem;
 	color: #fff;
-  // background: #00008b;
 
   .fa-bars{
     font-size: 3rem;
@@ -659,6 +658,103 @@ background: radial-gradient(circle, rgba(2,36,250,0.9500175070028011) 0%, rgba(1
 
  }
 
+}
+
+#footer{
+  padding: 2rem 0;
+  background: #333;
+  width: 100vw;
+
+  .row{
+    width: 100%;
+    margin: 0;
+  }
+  .brand-info{
+    margin: 1rem;
+    padding: 0;
+
+    a{
+      img{
+        width: 7rem;
+        border-radius: 5px;
+      }
+      color: #fff;
+      font-size: 2rem;
+      &:hover{
+        text-decoration: none;
+      }
+      i{
+        padding: 0 .5rem;
+        font-size: 2rem;
+      }
+      h3{
+        display: inline;
+        font-size: 2rem;
+      }
+
+    }
+    p{
+      color: #ccc;
+      padding: 2rem;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+
+
+  .links{
+    padding: 0;
+    margin: 1rem;
+
+    h3{
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .nav-links{
+      display: flex;
+      flex-flow: column;
+
+      a{
+        color: #ccc;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .links, .follow-us{
+    padding: 0;
+    margin: 1rem;
+
+    h3{
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .follow-us-links{
+      display: flex;
+      flex-flow: column;
+
+      a{
+        color: #ccc;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .credit{
+    color:  #fff;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    border: 100%;
+    border: .1rem solid rgba(255,255,255,.5);
+
+    span{
+      color: #FF0000;
+    }
+  }
+  
 }
 
 
